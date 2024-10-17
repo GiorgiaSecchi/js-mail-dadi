@@ -20,8 +20,8 @@
 playerName = prompt("Inserisci il tuo nome per giocare... ");
 alert("Premi OK e tira il dado!");
 
-const playerNumb = Math.floor(Math.random() * 7) + 1;
-const computerNumb = Math.floor(Math.random() * 7) + 1;
+const playerNumb = Math.floor(Math.random() * 6) + 1;
+const computerNumb = Math.floor(Math.random() * 6) + 1;
 
 alert("Computer:" + " " + computerNumb);
 alert(playerName + ":" + " " + playerNumb);
