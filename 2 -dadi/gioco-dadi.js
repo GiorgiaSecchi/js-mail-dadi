@@ -13,5 +13,8 @@
 
 // **************************************************************
 
-const playerNumb = Math.floor(Math.random() * 5);
-console.log(playerNumb);
+const playerNumb = Math.floor(Math.random() * 7);
+console.log("Player:" + playerNumb);
+
+const computerNumb = Math.floor(Math.random() * 7);
+console.log("Computer:" + computerNumb);
