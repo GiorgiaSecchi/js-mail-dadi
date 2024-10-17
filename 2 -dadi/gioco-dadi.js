@@ -17,12 +17,14 @@
 
 // **************************************************************
 
+playerName = prompt("Inserisci il tuo nome per giocare... ");
+alert("Premi OK e tira il dado!");
+
 const playerNumb = Math.floor(Math.random() * 7);
 const computerNumb = Math.floor(Math.random() * 7);
 
-alert("Giocatore:" + " " + playerNumb);
-
 alert("Computer:" + " " + computerNumb);
+alert(playerName + ":" + " " + playerNumb);
 
 let outputMsg = "";
 
