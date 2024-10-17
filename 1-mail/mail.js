@@ -21,3 +21,17 @@
 // stampare un messaggio a seconda del risultato
 
 // *****************************************************************************
+
+const emails = [
+  "marco@gmail.com",
+  "giulia@gmail.com",
+  "luca@gmail.com",
+  "giorgia@gmail.com",
+];
+
+//! RACCOLTA DATI
+
+// chiedere una email all'utente
+const userEmail = prompt("Inserisci la tua email per accedere:");
+
+//! ELABORAZIONE
