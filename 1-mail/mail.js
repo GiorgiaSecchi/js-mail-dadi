@@ -7,7 +7,7 @@
 // chiedere una email
 
 //! ELABORAZIONE
-// controllare all'interno di una lista (array) l'email inserita
+// verificare che la email inserita sia valida
 // SE email inserita è valida
 //      PER OGNI (for) email dentro la lista (array)
 //          verificare se si trova corrispondenza con la email utente
@@ -27,11 +27,15 @@ const emails = [
   "giulia@gmail.com",
   "luca@gmail.com",
   "giorgia@gmail.com",
+  "federico@gmail.com",
+  "chiara@gmail.com",
 ];
 
 //! RACCOLTA DATI
 
 // chiedere una email all'utente
-const userEmail = prompt("Inserisci la tua email per accedere:");
+const userEmail = prompt("Inserisci qui la tua email per accedere");
 
 //! ELABORAZIONE
+// verificare che la email inserita sia valida
+const isUserEmailValid = userEmail.includes("@") && userEmail.includes(".");
