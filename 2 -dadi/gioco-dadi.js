@@ -13,5 +13,5 @@
 
 // **************************************************************
 
-const playerNumb = math.random() * 5;
+const playerNumb = Math.floor(Math.random() * 5);
 console.log(playerNumb);
