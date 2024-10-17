@@ -44,13 +44,13 @@ const isUserEmailValid = userEmail.includes("@") && userEmail.includes(".");
 
 // SE email inserita è valida
 if (isUserEmailValid) {
-  //PER OGNI (for) email dentro la lista (array)
   for (let i = 0; i <= emails.length - 1; i++) {
     const currentEmail = emails[i];
+
     if (currentEmail === userEmail) {
       outputMsg = "Bentornato!";
     } else {
-      outputMsg = "Email non trovata!";
+      outputMsg = "Email non trovata";
     }
   }
 }
