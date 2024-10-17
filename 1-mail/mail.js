@@ -37,7 +37,7 @@ const emails = [
 const userEmail = prompt("Inserisci qui la tua email per accedere");
 
 //! ELABORAZIONE
-let outputMsg = "";
+// let outputMsg = "";
 
 // verificare che la email inserita sia valida
 const isUserEmailValid = userEmail.includes("@") && userEmail.includes(".");
@@ -48,11 +48,9 @@ if (isUserEmailValid) {
     const currentEmail = emails[i];
 
     if (currentEmail === userEmail) {
-      outputMsg = "Bentornato!";
-    } else {
-      outputMsg = "Email non trovata";
+      alert("Bentornato!");
     }
   }
+} else {
+  alert("Email non valida");
 }
-
-alert(outputMsg);
