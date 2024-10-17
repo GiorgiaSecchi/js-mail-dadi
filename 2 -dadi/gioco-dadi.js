@@ -18,21 +18,26 @@
 // **************************************************************
 
 const playerNumb = Math.floor(Math.random() * 7);
-console.log("Giocatore:" + " " + playerNumb);
-
 const computerNumb = Math.floor(Math.random() * 7);
-console.log("Computer:" + " " + computerNumb);
+
+alert("Giocatore:" + " " + playerNumb);
+
+alert("Computer:" + " " + computerNumb);
 
 let outputMsg = "";
 
 if (playerNumb > computerNumb) {
-  outputMsg = "Giocatore è il vincitore! :)";
+  outputMsg = "Giocatore è il vincitore!";
 } else {
-  outputMsg = "Computer è il vincitore! :)";
+  outputMsg = "Computer è il vincitore!";
 }
 
 if (playerNumb === computerNumb) {
   outputMsg = "Parità... ritenta ancora!";
 }
 
+alert(outputMsg);
+
+console.log(playerNumb);
+console.log(computerNumb);
 console.log(outputMsg);
