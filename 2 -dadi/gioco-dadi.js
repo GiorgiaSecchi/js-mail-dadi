@@ -24,12 +24,12 @@ const playerNumb = Math.floor(Math.random() * 6) + 1;
 const computerNumb = Math.floor(Math.random() * 6) + 1;
 
 alert("Computer:" + " " + computerNumb);
-alert(playerName + ":" + " " + playerNumb);
+alert(`${playerName}: ${playerNumb}`);
 
 let outputMsg = "";
 
 if (playerNumb > computerNumb) {
-  outputMsg = "Giocatore è il vincitore!";
+  outputMsg = `${playerName} è il vincitore!`;
 } else {
   outputMsg = "Computer è il vincitore!";
 }
